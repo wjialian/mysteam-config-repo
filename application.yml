@@ -26,13 +26,13 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: localhost:9092
-          zkNodes: localhost:2181
+          brokers: 192.168.1.176:9092
+          zkNodes: 192.168.1.176:2181
 
 # Discovery Server Access
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.1.116
     preferIpAddress: true
 
   client:
