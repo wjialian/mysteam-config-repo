@@ -37,7 +37,7 @@ eureka:
 
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.116:5001/eureka/,http://192.168.1.116:5002/eureka/
+      defaultZone: http://192.168.1.116:5501/eureka/,http://192.168.1.116:5502/eureka/
 
 hystrix:
   command.default.execution.isolation.thread.timeoutInMilliseconds: 3000
