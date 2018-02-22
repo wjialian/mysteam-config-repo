@@ -26,18 +26,18 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.1.117:9092
-          zkNodes: 192.168.1.117:2181
+          brokers: localhost:9092
+          zkNodes: localhost:2181
 
 # Discovery Server Access
 eureka:
   instance:
-    hostname: 192.168.1.116
+    hostname: localhost
     preferIpAddress: true
 
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.117:5501/eureka/,http://192.168.1.117:5502/eureka/
+      defaultZone: http://localhost:5501/eureka/,http://localhost:5502/eureka/
 
 hystrix:
   command.default.execution.isolation.thread.timeoutInMilliseconds: 3000
