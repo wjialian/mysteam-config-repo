@@ -28,6 +28,14 @@ spring:
         binder:
           brokers: 192.168.1.176:9092
           zkNodes: 192.168.1.176:2181
+  redis:
+    port: 6379
+    host: 192.168.1.183
+    pool:
+      max-active: 50
+      max-idle: 5
+      max-wait: 100000
+      min-idle: 5
 
 # Discovery Server Access
 eureka:
