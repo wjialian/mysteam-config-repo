@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: uaa
+    name: uaa-service
     index: 0
 
   datasource:
