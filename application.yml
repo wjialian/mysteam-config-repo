@@ -29,6 +29,15 @@ spring:
           brokers: 192.168.1.176:9092
           zkNodes: 192.168.1.176:2181
 
+#redis服务配置
+jedis :  
+  pool :  
+    host : 192.168.1.183
+    port : 6379  
+    config :  
+      maxTotal: 100  
+      maxIdle: 10  
+      maxWaitMillis : 100000
 # Discovery Server Access
 eureka:
   instance:
