@@ -1,19 +1,9 @@
 server:
   port: 23141
-
 spring:
   application:
     name: product
     index: 0
-
-  datasource:
-    url: jdbc:mysql://192.168.1.176:3306/product
-    username: root
-    password: 921117
-    testWhileIdle: true
-    validationQuery: SELECT 1
-    driver-class-name: com.mysql.jdbc.Driver
-
   cloud:
     stream:
       instanceCount: 1
@@ -56,8 +46,10 @@ spring:
             # partitionSelectorClass: null
             partitionCount: 1
             headerMode: raw
-
-
+mybatis:
+  type-aliases-package: com.pzcnet.product.domain
+  mapper-locations:  classpath*:mapper/*.xml
+  configLocation: classpath:mybatis-config.xml
 
 
 
