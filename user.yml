@@ -63,7 +63,7 @@ spring:
             headerMode: raw
 
 mybatis:
-  type-aliases-package: com.pzcnet.product.domain
+  type-aliases-package: com.pzcnet.user.domain
   mapper-locations:  classpath*:mapper/*.xml
   configLocation: classpath:mybatis-config.xml
 management:
