@@ -32,7 +32,7 @@ spring:
 #redis服务配置
 jedis :  
   pool :  
-    host : 192.168.1.116
+    host : 192.168.1.176
     port : 6379  
     config :  
       maxTotal: 200  
