@@ -67,7 +67,7 @@ mybatis:
   mapper-locations:  classpath*:mapper/*.xml
   configLocation: classpath:mybatis-config.xml
 management:
-  port: 7901
+  port: 7902
   security:
     enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false
 info: #定义各种额外的详情给服务端显示
