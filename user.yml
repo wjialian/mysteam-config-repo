@@ -66,10 +66,10 @@ mybatis:
   type-aliases-package: com.pzcnet.user.domain
   mapper-locations:  classpath*:mapper/*.xml
   configLocation: classpath:mybatis-config.xml
-management:
-  port: 7902
-  security:
-    enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false
+#management:
+ # port: 7902
+  #security:
+   # enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false
 info: #定义各种额外的详情给服务端显示
   app:
     name: "@project.name@" #从pom.xml中获取
